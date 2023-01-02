@@ -1,0 +1,39 @@
+<!--
+CS50W edx curriculum
+project0: Search
+Created by: Fink62
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Google Standard Search</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <ul class="gNavbar">
+                    <li class="gNavbarItem"><a href="./image_search.html">Images</a></li>
+                    <li class="gNavbarItem"><a href="./advanced_search.html">Advanced Search</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <div class="centeredLogo">
+                <img src="google_logo.png" alt="Google today doodle" height="92px">
+            </div>
+            <form action="https://www.google.com/search">
+                <input class="roundSearchBox" type="text" name="q">
+                <div class="centeredItem">
+                    <input class="mainSubmitBtn" type="submit" value="Google Search">
+                    <input class="mainSubmitBtn" type="submit" name="btnI" value="I'm Feeling Lucky">
+                </div>
+            </form>
+        </main>
+    </body>
+</html>

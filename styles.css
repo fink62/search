@@ -1,0 +1,161 @@
+/*
+CS50W edx curriculum
+project0: Search
+Created by: Fink62
+*/
+
+body {
+    font-family: Arial, sans-serif;
+}
+.gNavbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+.gNavbarItem {
+    margin: 10px;
+}
+a:link {
+    color: black;
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+a:active {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: black;
+}
+.centeredLogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.centeredItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.roundSearchBox {
+    display: flex;
+    height: 44px;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 0 auto;
+    width: 584px;
+    max-width: 584px;
+    margin-top: 30px;
+    padding-left: 15px;
+    padding-right: 15x;
+}
+.mainSubmitBtn {
+    height: 34px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+.advH1 {
+    color: #d93025;
+    font-size: 20px;
+    margin-left: 30px;
+}
+.advDivider {
+    border-bottom: 1px solid #ebebeb;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+.formRowSpace {
+    display: flex;
+    max-width: 1140px;
+    height: 42px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+.labelSpace {
+    display: inline-block;
+    min-width: 167px;
+    width: 16%;
+    height: 42px;
+    font-size: 13px;
+    vertical-align: middle;
+}
+.labelField {
+    display: table-cell;
+    height: 30px;
+    vertical-align: middle;
+}
+.inputSpace {
+    display: inline-block;
+    width: 50%;
+    height: 42px;
+    vertical-align: middle;
+}
+.inputField {
+    border-radius: 1px;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    font-size: 13px;
+    height: 25px;
+    padding: 1px 8px;
+    width: 99%;
+}
+.helpSpace {
+    display: inline-block;
+    min-width: 160px;
+    width: 30%;
+    height: 42px;
+    font-size: 11px;
+    padding-left: 15px;
+    vertical-align: middle;
+    margin-left: 1%;
+    color: #555;
+}
+.helpField {
+    display: table-cell;
+    height: 30px;
+    vertical-align: middle;
+}
+.helpSample {
+    font-family: monospace;
+    white-space: pre;
+}
+.advSubmitBtn {
+    height: 30px;
+    box-shadow: none;
+    background-color: #4d90fe;
+    border: 1px solid #3079ed;
+    color: #fff;
+    border-radius: 2px;
+    cursor: default;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    float: right;
+    margin-top: 10px;
+    margin-right: -12px;
+}

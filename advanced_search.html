@@ -1,0 +1,133 @@
+<!--
+CS50W edx curriculum
+project0: Search
+Created by: Fink62
+
+to do for later:
+keep the help text from moving left when making the window smaller
+On Google site, it just disappears
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Google Advanced Search</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <ul class="gNavbar">
+                    <li class="gNavbarItem"><a href="./index.html">Google</a></li>
+                </ul>
+            </div>
+        </header>
+    
+        <main>
+            <p class="advH1">Advanced Search</p>
+            <!--
+                instead of <hr>, Googles is using a div with a bottom border
+            -->
+            <div class="advDivider"></div>
+
+            <form action="https://www.google.com/search" method="GET" name="f">
+                <!--
+                    Using a row as placeholder for all elements.
+                    Using divs as placeholders (*Space) for 3 elements inside the row.
+                    Using nested divs for the content fields (*Field) on top of the placeholders.
+                    Using the <span> element for applying monospace to help samples is what I learned from Google :).
+                    Labels and help texts copied from Google's Advanced Search page.
+                -->
+                <div class="formRowSpace">
+                    <div class="labelSpace">
+                        <div class="labelField">
+                            <label style="font-size: 15px">Find pages with...</label>
+                        </div>
+                    </div>
+                    <div class="inputSpace"></div>
+                    <div class="helpSpace">
+                        <div class="helpField">
+                            <span>To do this in the searchbox</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="formRowSpace">
+                    <div class="labelSpace">
+                        <div class="labelField">
+                            <label for="all">all these words:</label>
+                        </div>
+                    </div>
+                    <div class="inputSpace">
+                        <input class="inputField" id="all" type="text" name="as_q">
+                    </div>
+                    <div class="helpSpace">
+                        <div class="helpField">
+                            Type the important words: 
+                            <span class="helpSample">tri-colour rat terrier</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="formRowSpace">
+                    <div class="labelSpace">
+                        <div class="labelField">
+                            <label for="this">this exact word or phrase:</label>
+                        </div>
+                    </div>
+                    <div class="inputSpace">
+                        <input class="inputField" id="this" type="text" name="as_epq">
+                    </div>
+                    <div class="helpSpace">
+                        <div class="helpField">
+                            Put exact words in quotes: 
+                            <span class="helpSample">"rat terrier"</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="formRowSpace">
+                    <div class="labelSpace">
+                        <div class="labelField">
+                            <label for="any">any of these words:</label>
+                        </div>
+                    </div>
+                    <div class="inputSpace">
+                        <input class="inputField" id="any" type="text" name="as_oq">
+                    </div>
+                    <div class="helpSpace">
+                        <div class="helpField">
+                            Type OR between all the words you want: 
+                            <span class="helpSample">miniature OR standard</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="formRowSpace">
+                    <div class="labelSpace">
+                        <div class="labelField">
+                            <label for="none">none of these words:</label>
+                        </div>
+                    </div>
+                    <div class="inputSpace">
+                        <input class="inputField" id="none" type="text" name="as_eq">
+                    </div>
+                    <div class="helpSpace">
+                        <div class="helpField">
+                            Put a minus sign just before words that you don't want: 
+                            <span class="helpSample">-rodent, -"Jack Russell"</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="formRowSpace">
+                    <div class="labelSpace">
+                        <div class="labelField">
+                            <label for="advSBtn"></label>
+                        </div>
+                    </div>
+                    <div class="inputSpace">
+                        <input class="advSubmitBtn" id="advSBtn" type="submit" value="Advanced Search">
+                    </div>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>
